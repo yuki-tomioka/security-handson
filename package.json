@@ -1,0 +1,20 @@
+{
+  "name": "security-handson",
+  "version": "1.0.0",
+  "description": "[フロントエンド開発のためのセキュリティ入門](https://www.shoeisha.co.jp/book/detail/9784798169477)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuki-tomioka/security-handson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuki-tomioka/security-handson/issues"
+  },
+  "homepage": "https://github.com/yuki-tomioka/security-handson#readme"
+}

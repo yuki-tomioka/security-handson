@@ -3,6 +3,12 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
   let message = req.query.message;
+
+  if (message === "") {
+    res.status(400);
+    message = "messageの値が空です。";
+  }
+
   res.send({ message });
 });
 

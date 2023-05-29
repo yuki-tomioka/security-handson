@@ -15,8 +15,7 @@
       const url = new URL(location.href);
       const message = url.searchParams.get("message");
       if (message !== null) {
-        const textNode = document.createTextNode(message);
-        document.querySelector("#result").appendChild(textNode);
+        document.querySelector("#result").textContent = message;
       }
     </script>
   </body>

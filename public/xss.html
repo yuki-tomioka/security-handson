@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XXS検証用ページ</title>
+    <script src="./purify.js"></script>
   </head>
   <body>
     <h1>XXS検証用ページ</h1>
@@ -16,7 +17,8 @@
 
       const message = url.searchParams.get("message");
       if (message !== null) {
-        document.querySelector("#result").textContent = message;
+        const sanitizeMassage = DOMPurify.sanitize(message);
+        document.querySelector("#result").textContent = sanitizeMassage;
       }
 
       const urlStr = url.searchParams.get("url");

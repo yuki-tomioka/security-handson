@@ -15,6 +15,7 @@ app.get("/", (req, res, next) => {
 });
 
 app.get("/csp", (req, res) => {
+  res.header("Content-Security-Policy", "script-src 'self'");
   res.render("csp");
 });
 
